@@ -18,7 +18,7 @@ return async(req, res, next)=>{
         return res.status(400).json({ message: 'Duplicated email' });     
         }
         //create user
-        const user = await User.create({name, email, password,role, location});
+        const user = await User.create({name, email, password, role, location});
         return res.status(201).json({user})
 }
 catch(err){res.status(500).json({message:`${err.message}`})}

@@ -1,9 +1,6 @@
 const mongoose = require('mongoose')
 
 const FQASchema = new mongoose.Schema({
-    //an array of questions objects
-    myQuestion:[
-        {
         question:{
         type:String,
         required:true
@@ -11,8 +8,7 @@ const FQASchema = new mongoose.Schema({
     answer:{
         type:String,
         required:true
-    }}
-]
+    }
     
 })
 module.exports = mongoose.model("FAQ", FQASchema);

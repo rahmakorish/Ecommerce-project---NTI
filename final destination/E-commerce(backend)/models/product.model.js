@@ -16,7 +16,7 @@ const productSchema = new mongoose.Schema({
   },
   imgURL: {
     type: String,
-    // required: true
+    required: true
   },
   //slug: name without spaces or special chracter to create route (slugifiy package)
   slug: {

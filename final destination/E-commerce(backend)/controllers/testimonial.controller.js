@@ -6,7 +6,7 @@ exports.createTestimonial = async(req,res)=>{
     try{
         //user not name && check if user exists
         const {user, text} = req.body;
-        console.log(text);
+        // console.log(text);
         
         const newTestimonial = await Testimonial.create( {user, text});
         res.status(200).json(newTestimonial)
